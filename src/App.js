@@ -3,9 +3,10 @@ import './App.css';
 import { Route, Switch, Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
 
-import HomePage from './components/pages/homepage/homepage.component.jsx'
-import ShopPage from './components/pages/shop/shop.component.jsx'
-import Header from './components/header/header.component.jsx'
+import HomePage from './components/pages/homepage/homepage.component.jsx';
+import ShopPage from './components/pages/shop/shop.component.jsx';
+import CheckoutPage from './components/pages/checkout/checkout.component.jsx';
+import Header from './components/header/header.component.jsx';
 import SignInSignUpPage from './components/pages/sign-in-sign-up/sign-in-sign-up.component.jsx';
 import { auth, createUserProfileDocument } from './firebase/firebase.utils';
 import { setCurrentUser } from './redux/user/user.actions';
@@ -43,8 +44,12 @@ class App extends React.Component {
         <Header />
         <Switch>
           <Route exact path='/' component={HomePage} />
-          <Route exact path='/shop' component={ShopPage} />
-          <Route exact path='/signInsignUp' render={() => this.props.currentUser ? (<Redirect to='/' />) : (<SignInSignUpPage/>)} />
+          <Route path='/shop' component={ShopPage} />
+          <Route path='/checkout' component={CheckoutPage}></Route>
+          <Route 
+            exact 
+            path='/signInsignUp' 
+            render={() => this.props.currentUser ? (<Redirect to='/' />) : (<SignInSignUpPage/>)} />
         </Switch>
       </div>
     );
