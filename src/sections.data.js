@@ -1,7 +1,7 @@
 /* Used as starting data for Directory */
 
-const SECTIONS_DATA = [
-    {
+const SECTIONS_DATA = {
+    hats: {
         title: 'hats',
         // imageUrl: 'https://i.ibb.co/cvpntL1/hats.png',
         imageUrl: 'images/hats.png', // local file in public/images/
@@ -9,21 +9,21 @@ const SECTIONS_DATA = [
         linkUrl: 'shop/hats'
 
     },
-    {
+    jackets: {
         title: 'jackets',
         // imageUrl: 'https://i.ibb.co/px2tCc3/jackets.png',
         imageUrl: 'images/jackets.png', // local file in public/images/
         id: 2,
         linkUrl: 'shop/jackets'
     },
-    {
+    sneakers: {
         title: 'sneakers',
         // imageUrl: 'https://i.ibb.co/0jqHpnp/sneakers.png',
         imageUrl: 'images/sneakers.png', // local file in public/images/
         id: 3,
         linkUrl: 'shop/sneakers'
     },
-    {
+    womens: {
         title: 'womens',
         // imageUrl: 'https://i.ibb.co/GCCdy8t/womens.png',
         imageUrl: 'images/womens.png', // local file in public/images/
@@ -31,7 +31,7 @@ const SECTIONS_DATA = [
         id: 4,
         linkUrl: 'shop/womens'
     },
-    {
+    mens: {
         title: 'mens',
         // imageUrl: 'https://i.ibb.co/R70vBrQ/men.png',
         imageUrl: 'images/men.png', // local file in public/images/
@@ -39,6 +39,6 @@ const SECTIONS_DATA = [
         id: 5,
         linkUrl: 'shop/mens'
     }
-];
+};
 
 export default SECTIONS_DATA;
