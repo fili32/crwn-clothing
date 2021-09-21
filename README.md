@@ -68,3 +68,12 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `yarn build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+https://git.heroku.com/theonis-crwn-live.gitC:\Users\thgig\ztmReact\crwn-clothing (main -> origin) 
+λ git push heroku main:origin 
+Enumerating objects: 350, done. Counting objects: 100% (350/350), done. Delta compression using up to 8 
+threads Compressing objects: 100% (345/345), done. Writing objects: 100% (350/350), 2.76 MiB | 1.17 MiB/s, 
+done. Total 350 (delta 128), reused 0 (delta 0), pack-reused 0 remote: Pushed to branch other than [main, master],
+ skipping build. 
+To https://git.heroku.com/theonis-crwn-live.git  * [new branch] main -> origin
